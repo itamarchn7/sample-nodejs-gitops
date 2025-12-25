@@ -5,14 +5,14 @@ metadata:
   namespace: argocd
 spec:
   project: default
-
+  
   source:
-    repoURL: https://github.com/itamarchn7/sample-nodejs
-    targetRevision: main
-    path: helm
-    helm:
-      valueFiles:
-        - ../../sample-nodejs-gitops/apps/sample-nodejs/values.yaml
+  repoURL: https://github.com/itamarchn7/sample-nodejs-gitops
+  targetRevision: main
+  path: apps/sample-nodejs
+  helm:
+    valueFiles:
+      - values.yaml  
 
   destination:
     server: https://kubernetes.default.svc
