@@ -1,8 +1,8 @@
-replicaCount: 2
+replicaCount: 3
 
 image:
   repository: itamarchn/sample-nodejs
-  tag: "4"
+  tag: "6"
   pullPolicy: IfNotPresent
 
 service:
