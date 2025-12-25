@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: itamarchn/sample-nodejs
-  tag: "${IMAGE_TAG}"
+  tag: ${IMAGE_TAG}
   pullPolicy: IfNotPresent
 
 service:
